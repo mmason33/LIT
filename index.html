@@ -1,0 +1,9 @@
+<script type="module">
+    import {render} from './node_modules/lit-html/lit-html.js';
+    import {myTemplate} from './functions.js';
+    import {names} from './name.js'
+    import {styles} from './css.js'
+
+    render(styles, document.head);
+    render(myTemplate(names[Math.floor(Math.random() * names.length)]), document.body)
+  </script>
